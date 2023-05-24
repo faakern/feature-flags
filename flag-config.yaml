@@ -1,0 +1,10 @@
+users-endpoints-flag:
+  variations:
+    access: true
+    block: false
+  targeting:
+    - name: Allow web channel access
+      query: key eq "web"
+      variation: access
+  defaultRule:
+    variation: block
