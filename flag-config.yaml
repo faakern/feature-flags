@@ -1,4 +1,4 @@
-users-endpoints-flag:
+user-endpoints-flag:
   variations:
     access: true
     block: false
@@ -9,7 +9,6 @@ users-endpoints-flag:
     - name: Allow mobile channel access
       query: key eq "mobile"
       variation: access
-    name: Wrong semantics
   defaultRule:
     variation: block
 
