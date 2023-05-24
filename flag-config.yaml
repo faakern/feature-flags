@@ -6,5 +6,9 @@ users-endpoints-flag:
     - name: Allow web channel access
       query: key eq "web"
       variation: access
+    - name: Allow mobile channel access
+      query: key eq "mobile"
+      variation: access
   defaultRule:
     variation: block
+
