@@ -1,4 +1,4 @@
-user-endpoints-flag:
+users-endpoints-flag:
   variations:
     access: true
     block: false
