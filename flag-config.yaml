@@ -8,7 +8,19 @@ users-endpoints-flag:
       variation: access
     - name: Allow mobile channel access
       query: key eq "mobile"
-      variation: access
+      variation: block
   defaultRule:
     variation: block
-
+logging-flag:
+  variations:
+    variation-true: true
+    variation-false: false
+  targeting:
+    - name: Set debug logging
+      query: key eq "debug"
+      variation: variation-false
+    - name: Set client request logging
+      query: key eq "http-client-requests"
+      variation: variation-true
+  defaultRule:
+    variation: error
